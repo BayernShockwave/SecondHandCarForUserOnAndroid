@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutuser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFrm">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutuser"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Personal Center"
+            android:textSize="@dimen/zehn_size"></TextView>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/optimusprime"></ImageView>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="200dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/pencil">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑个人信息"
+                android:textSize="@dimen/acht_size"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="75dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/editpersonalinfo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/right">
+            </Button>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="275dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/order">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看历史订单"
+                android:textSize="@dimen/acht_size"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="75dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/checkhistoryorder"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/right">
+            </Button>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="350dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/out">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即登出系统"
+                android:textSize="@dimen/acht_size"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="75dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/outsystem"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/right">
+            </Button>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

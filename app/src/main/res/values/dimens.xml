@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="eins_size">5sp</dimen>
+    <dimen name="zwei_size">10sp</dimen>
+    <dimen name="drei_size">15sp</dimen>
+    <dimen name="vier_size">20sp</dimen>
+    <dimen name="funf_size">25sp</dimen>
+    <dimen name="sechs_size">30sp</dimen>
+    <dimen name="sieben_size">35sp</dimen>
+    <dimen name="acht_size">40sp</dimen>
+    <dimen name="neun_size">45sp</dimen>
+    <dimen name="zehn_size">50sp</dimen>
+</resources>

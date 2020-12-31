@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditInfoFrm">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutedit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Edit personal Infomation"
+            android:textSize="@dimen/sieben_size"></TextView>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit"></ImageView>
+
+        <FrameLayout
+            android:id="@+id/idfrm"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/line">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/userlogin"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="25dp"></ImageView>
+
+            <TextView
+                android:id="@+id/userid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="55dp"
+                android:text=""
+                android:textSize="@dimen/funf_size"></TextView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/namefrm"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/idfrm"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/line">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/userlogin"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="25dp"></ImageView>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="@dimen/funf_size"></EditText>
+
+            <Button
+                android:id="@+id/unameclear"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/delete"></Button>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/pwdfrm"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/namefrm"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/line">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/userpwd"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="25dp"></ImageView>
+
+            <EditText
+                android:id="@+id/userpwd"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-25dp"
+                android:text=""
+                android:textSize="@dimen/funf_size"></EditText>
+
+            <Button
+                android:id="@+id/upwdsee"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="75dp"
+                android:background="@drawable/pwdsee"></Button>
+
+            <Button
+                android:id="@+id/upwdclear"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/delete"></Button>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/pwdfrm"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="25dp"
+            android:text="确定"></Button>
+
+        <Button
+            android:id="@+id/clean"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/pwdfrm"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="25dp"
+            android:text="清空"></Button>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

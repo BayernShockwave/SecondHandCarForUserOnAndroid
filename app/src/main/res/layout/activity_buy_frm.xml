@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyFrm"
+    android:id="@+id/layoutbuy">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutbuy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Shopping Cart"
+            android:textSize="@dimen/zehn_size"></TextView>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shopcar"></ImageView>
+
+        <FrameLayout
+            android:id="@+id/car1"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/line">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/car"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="25dp"></ImageView>
+
+            <TextView
+                android:id="@+id/carid1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="55dp"
+                android:text=""
+                android:textSize="@dimen/drei_size"></TextView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/car2"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/car1"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/line">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/car"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="25dp"></ImageView>
+
+            <TextView
+                android:id="@+id/carid2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="55dp"
+                android:text=""
+                android:textSize="@dimen/drei_size"></TextView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/car3"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/car2"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/line">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/car"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="25dp"></ImageView>
+
+            <TextView
+                android:id="@+id/carid3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="55dp"
+                android:text=""
+                android:textSize="@dimen/drei_size"></TextView>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/buycar"
+            android:text="购买"
+            android:textSize="@dimen/funf_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/car3"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="150dp"></Button>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/login_frm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Second-Hand Autobots Store"
+            android:textSize="@dimen/funf_size"></TextView>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="240dp"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/optimusprime"></ImageView>
+
+        <FrameLayout
+            android:id="@+id/uid_frm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="275dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/autobots"></ImageView>
+
+            <EditText
+                android:id="@+id/uid"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="75dp"
+                android:hint="请输入账号"
+                android:paddingRight="100dp"></EditText>
+
+            <Button
+                android:id="@+id/uidclear"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="325dp"
+                android:background="@drawable/delete"></Button>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/upwd_frm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uid_frm"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/decepticons"></ImageView>
+
+            <EditText
+                android:id="@+id/upwd"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="75dp"
+                android:hint="请输入密码"
+                android:paddingRight="100dp"
+                android:inputType="textPassword"></EditText>
+
+            <Button
+                android:id="@+id/pwdsee"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="275dp"
+                android:background="@drawable/pwdsee"></Button>
+
+            <Button
+                android:id="@+id/upwdclear"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="325dp"
+                android:background="@drawable/delete"></Button>
+
+        </FrameLayout>
+
+        <CheckBox
+            android:id="@+id/trust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upwd_frm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="信任该设备"></CheckBox>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/trust"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:text="登录账号"></Button>
+
+        <Button
+            android:id="@+id/forget"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/trust"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="25dp"
+            android:text="忘记密码"></Button>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/trust"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="25dp"
+            android:text="用户注册"></Button>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
